@@ -1,0 +1,106 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+#forma {
+    position: relative;
+    height: 100vh;
+}
+
+#forma .prijavaNaslov {
+    margin-bottom: 250px;
+}
+
+form {
+    background-color: #eee;
+    max-width: 500px;
+    border: 5px solid #aaa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+@media (max-width: 499px) {
+    form {
+        margin-top: 50px;
+        top: 0;
+        transform: translate(-50%);
+    }
+    #registracijaNaslov {
+        top: 300px;
+    }
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#registracija,
+#prijava {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 25px;
+}
+
+#registracija:hover,
+#prijava:hover {
+    background-color: grey;
+    color: lavender;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#registracija:active,
+#prijava:active {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+nav ul li:hover{
+    background-color: #333;
+}
